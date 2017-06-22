@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>technext</title>
+<link rel="stylesheet" type="text/css" media="all" href="style.css">
+</head>
+<body>
+<section id="container">
+	<h2>Software As A Service</h2>
+	<form name="hongkiat" id="hongkiat-form" method="post"  action="/cgi-bin/saas.py">
+		<div id="wrapping" class="clearfix">
+			<section id="aligned">
+			<h3>Select your software</h3>
+		<span class="radiobadge">
+			<input type="radio" id="low" name="sw" value="1">
+			<label for="low">Firefox web browser</label>
+		</span>
+		<span class="radiobadge">
+			<input type="radio" id="med" name="sw" value="2">
+			<label for="med">Gedit</label>
+		</span>
+		<span class="radiobadge">
+			<input type="radio" id="high" name="sw" value="3">
+			<label for="high">Image viewer</label>
+		</span>
+		<input type="text" name="usr"  placeholder="Enter user name" tabindex="4" class="txtinput" required>
+		<input type="password" name="passwd"  placeholder="Enter password" tabindex="4" class="txtinput" required>
+		<section id="buttons">
+			<input type="reset" name="reset" id="resetbtn" class="resetbtn" value="Reset">
+			<input type="submit" name="submit" id="submitbtn" class="submitbtn" tabindex="7" value="Submit this!">
+			<br style="clear:both;">
+		</section>
+	</form>
+</section>
+</body>
+</html>

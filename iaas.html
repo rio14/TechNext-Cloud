@@ -1,0 +1,76 @@
+<!DOCTYPE.html>
+<html>
+<head>
+<title>technext</title>
+<link rel="stylesheet" type="text/css" media="all" href="style.css">
+</head>
+<body>
+<section id="container">
+	<h2>Infrastructure As A Service</h2>
+	<form name="hongkiat" id="hongkiat-form" method="post" action="http://192.168.43.103/cgi-bin/iaas.py">
+		<div id="wrapping" class="clearfix">
+		<section id="aligned">
+			<input type="text" name="usr"  placeholder="Enter  user name" tabindex="4" class="txtinput" required>
+			<input type="password" name="passwd"  placeholder="Enter password" tabindex="4" class="txtinput" required>	
+			<input type="text" name="name"  placeholder="ENTER OS NAME" tabindex="4" class="txtinput" required>
+			<input type="text" name="ram"  placeholder="ENTER RAM SIZE"  tabindex="4" class="txtinput" required>
+			<input type="text" name="cpu"  placeholder="ENTER CORE CPU "  tabindex="4" class="txtinput" required>
+			<input type="text" name="hd"  placeholder="ENTER SIZE OF STORAGE "  tabindex="4" class="txtinput" required>
+			<input type="text" name="port"  placeholder="ENTER PORT NO IN RANGE 5900-5999"  tabindex="4" class="txtinput" required>
+			<section id="buttons">
+				<input type="reset" name="reset" id="resetbtn" class="resetbtn" value="Reset">
+				<input type="submit"  name="submit" id="submitbtn" class="submitbtn" tabindex="7" value="Submit this!">
+				<br style="clear:both;">
+			</section>
+		</section>
+		<section id="aside1" class="clearfix">
+			<section id="recipientcase"></section>
+			<section id="prioritycase">
+				<h3>Select your type of migration:</h3>
+				<span class="radiobadge">
+					<input type="radio" name="radio" value="1">
+					<label for="1">Live Boot OS</label>
+				</span>
+				<span class="radiobadge">
+					<input type="radio" name="radio" value="2">
+					<label for="2">Manually install</label>
+				</span>
+				<span class="radiobadge">
+					<input type="radio" name="radio" value="3">
+					<label for="2">Take Snap of your OS</label>
+				</span>
+			</section>
+			<section id="aside" class="clearfix">
+				<section id="recipientcase1"></section>
+				<section id="prioritycase1">
+					<h3>Select your OS:</h3>
+					<span class="radiobadge">
+						<input type="radio" name="y" value="1">
+						<label for="1">RHEL 7.2</label>
+					</span>
+				
+					<span class="radiobadge">
+						<input type="radio" name="y" value="2">
+						<label for="2">WINDOWS 7</label>
+					</span>
+				
+					<span class="radiobadge">
+						<input type="radio" name="y" value="3">
+						<label for="3">UBUNTU</label>
+					</span>
+				</section>
+                <br><br><br><br><br><br>
+</div>
+</section>
+</form>
+</section>
+<html>
+<head>
+<script type="text/javascript">
+	function show_alert()
+	{
+		alert("your os is ready");
+	}
+</script>
+</body>
+</html>

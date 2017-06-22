@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>technext</title>
+<link rel="stylesheet" type="text/css" media="all" href="style.css">
+<link rel="stylesheet" type="text/css" media="all" href="a.css">
+</head>
+<body>
+<section id="container">
+	<h2>TEchNExt cloud</h2>
+	<form action="http://192.168.43.103/cgi-bin/login.py" "method = POST" style="width:40%; float:left ; padding-left: 5%;"> 
+	<fieldset>
+		<h3><legend>Login</legend></h3>
+		<table>
+			<tr>
+			<td><input type="text" name="usr"  placeholder="Enter user name" tabindex="4" class="txtinput" required></td>
+			</tr>
+			<tr>
+		   	<td><input type="password" name="passwd"  placeholder="Enter password" tabindex="4" class="txtinput" required></td></br>
+			</tr>
+		</table>
+		<section id="buttons">
+			<input type="reset" name="reset" id="resetbtn" class="resetbtn" value="Reset">
+			<input type="submit" name="submit" id="submitbtn" class="submitbtn" tabindex="7" value="Submit this!">
+			<br style="clear:both;">
+		</section>
+	</fieldset>
+	</form>
+	<form action="http://192.168.43.103/cgi-bin/create.py" " method = POST " style="width:40%;  float:right;  padding-right: 5%;"> 
+	<fieldset>
+		<h3><legend> Create New User</legend></h3>
+		<table>
+        	    	<tr>
+			<td><input type="text" name="usr"  placeholder="Enter user name" tabindex="4" class="txtinput" required></td>
+			</tr>
+			<tr>
+			<td><input type="text" name="email"  placeholder="Enter email-id" tabindex="4" class="txtinput" required></td>
+			</tr>
+			<tr>
+			<td><input type="text" name="mob"  placeholder="Enter mobile no" tabindex="4" class="txtinput" required></td>
+			</tr>
+			<tr>
+			<td><input type="password" name="passwd"  placeholder="Create password" tabindex="4" class="txtinput" required></td></br>
+			</tr>
+			<tr>
+			<td><input type="password" name="passwd1"  placeholder="Reenter password" tabindex="4" class="txtinput" required></td>
+			</tr>
+		</table>
+		<section id="buttons">
+			<input type="reset" name="reset" id="resetbtn" class="resetbtn" value="Reset">
+			<input type="submit" name="submit" id="submitbtn" class="submitbtn" tabindex="7" value="Submit this!">
+			<br style="clear:both;">
+		</section>
+		<script>
+		function sucsess()
+		{
+			alert("You prefer browsing internet with ");
+		}
+</script>
+</form>
+</section>
+</body>
+</html>
